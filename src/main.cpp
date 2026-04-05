@@ -3,7 +3,9 @@
 #include <iostream>
 
 int main() {
+  Timer timer;
   TimedDoor tDoor(5);
+  tDoor.setTimer(&timer);
   tDoor.lock();
   tDoor.unlock();
 
